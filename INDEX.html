@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asp Infotech Private Limited</title>
+<!-- Favicon icon -->
+    <link rel="shortcut icon" sizes="32x32" href="Asp.jpg">
+
+
+
+
+
+<h1>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+</style>
+<img  src="Asp.jpg" style="width:30%>
+</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<style>
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: BLUE; 
+}
+
+.navbar a {
+  float: LEFT;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: LEFT;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: BLACK;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: BLACK;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: LEFT;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: pink;
+  color: blue;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+
+<----image alignning ---->
+
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+.row {
+  display: flex;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 20px;
+  margin: 60px;
+}
+
+
+
+
+<--1st BOXES WORKS--->
+
+
+.flip-box1 {
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 100px;
+}
+
+.flip-box1-inner {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box1-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box1-front, .flip-box1-back {
+  position: sticky;
+  width: 200%;
+  height: 200%;
+  backface-visibility: hidden;
+}
+
+.flip-box1-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box1-back {
+  background-color:chartreuse;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+<----2ND BOXES WORKS>
+
+
+
+.flip-box2 {
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  border: 2.5px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box2-inner {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box2:hover .flip-box2-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box2-front, .flip-box2-back {
+  position: sticky;
+  width: 200%;
+  height: 200%;
+  backface-visibility: hidden;
+}
+
+.flip-box2-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box2-back {
+  background-color: chartreuse;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+<----3RD BOX WORKS---->
+
+
+.flip-box3{
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  
+  border: 1px solid #f1f1f1;
+  perspective: 100px;
+}
+
+.flip-box3-inner {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box3-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box3-front, .flip-box3-back {
+  position: sticky;
+  width: 200%;
+  height: 200%;
+  backface-visibility: hidden;
+}
+
+.flip-box3-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box3-back {
+  background-color: chartreuse;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+<-----------4TH BOX WORKS---->
+
+
+
+.flip-box4 {
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 100px;
+}
+
+.flip-box4-inner {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box4:hover .flip-box4-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box4-front, .flip-box4-back {
+  position: sticky;
+  width: 200%;
+  height: 200%;
+  backface-visibility: hidden;
+}
+
+.flip-box4-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box4-back {
+  background-color:chartreuse;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:yellow;
+   color:black;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="about_us.html">Home</a>
+  
+  <div class="subnav">
+  
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+	
+    <div class="subnav-content">
+      <a href="partners.html">Partners</a>
+     <a href="team.html">Team </a>
+	
+	
+	
+	
+      <a href="recruiters.html">Recruiters </a>
+	  
+    </div>
+  </div> 
+  
+  <a href="RegistrationForm.html">Careers</a>
+  <a href="https://www.google.com/maps/dir/23.5380736,87.2923136/asp+infotech+consultancy/@23.5371138,87.292808,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x39f771f803c926cb:0x5e6451b2e51d95b!2m2!1d87.3019857!2d23.5378906">Map</a>
+  <a href="terms.html">Terms</a>
+  
+  
+ 
+
+</div>
+
+<div style="padding:0 8px">
+  </div>
+ <br>
+  
+  
+  
+  
+  
+  
+  
+  
+ <h2 align="center"><i><u>WHAT WE THINK ABOUT</u></i></h2>
+ 
+  <div class="row">
+  
+  <div class="column">
+  
+<div class="flip-box1">
+  <div class="flip-box1-inner">
+    <div class="flip-box1-front">
+      <img src="CO1.jpg" align="left" style="width:250;height:250">
+	  
+    </div>
+    <div class="flip-box1-back">
+      <h6>CONSULTANCY</h6>
+	  <p>What an amazing company</p>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="column">
+<div class="flip-box2">
+  <div class="flip-box2-inner">
+    <div class="flip-box2-front">
+      <img src="TR1.jpg"   align="right" style="width:250;height:250">
+	  
+    </div>
+    <div class="flip-box2-back">
+      
+      <h2>TRAINING</h2>
+      <p>What an amazing company</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="column">
+<div class="flip-box3">
+  <div class="flip-box3-inner">
+    <div class="flip-box3-front">
+      <img src="RES1.jpg" align="left" style="width:250;height:250">
+	  
+    </div>
+    <div class="flip-box3-back">
+      <h2>RESEARCH</h2>
+	  <p>What an amazing company</p>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="column">
+<div class="flip-box4">
+  <div class="flip-box4-inner">
+    <div class="flip-box4-front">
+	
+      <img src="PL1.jpg" align="left" style="width:50;height:50">
+	  
+    </div>
+    <div class="flip-box4-back">
+      <h2>PLACEMENT</h2>
+	  <p>What an amazing company</p>
+     
+    </div>
+  </div>
+</div></div>
+</div>
+
+
+
+
+
+  <section> 
+  <h2  align="center"><i><u>OUR LEARNERS FEEDBACK</u></i></h2>
+  
+  
+  <br>
+  
+  
+  <img class="mySlides"   src="S1.jpg"
+  style="width:90%">
+  <img  class="mySlides"  src="S2.jpg"
+  style="width:90%">
+  <img  class="mySlides"  src="S3.jpg"
+  style="width:90%">
+  </section>
+  
+  <script>
+// Automatic Slideshow - change image every 6 seconds
+var myIndex = 0;
+carousel ();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 6000);
+}
+</script>
+<br>
+<br>
+<div class="footer">
+
+<br>
+
+  <a class="logo"><b>Build-by:-</b>   <i><u>Manisha Maji</u></i>    </a>
+<br>
+<br>
+
+<a href="https://www.facebook.com/"><icon class="fa fa-facebook"></icon></a>
+
+<a href="https://twitter.com/login"><icon class="fa fa-twitter"></icon></a>
+
+<a href="https://in.linkedin.com/"><icon class="fa fa-linkedin"></icon></a>
+<a href="https://www.youtube.com/"><icon class="fa fa-youtube"></icon></a>
+<a href="https://www.instagram.com/"><icon class="fa fa-instagram"></icon></a>
+<br>
+  <p><b> Note:-</b><i>Website in progress.........</i></p>
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
